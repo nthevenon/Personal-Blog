@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<h1>Test</h1>
+<canvas id="myCanvas" width="450" height="450"></canvas>
+<script type="text/javascript">
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "rgb(0,100,100)";
+	ctx.fillRect(0,0,150,150);
+	ctx.fillRect(150,150,150,150);
+	ctx.fillRect(300,300,150,150);
+	ctx.fillRect(300,0,150,150);
+	ctx.fillRect(0,300,150,150);
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</body>
+</html>
