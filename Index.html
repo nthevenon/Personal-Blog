@@ -10,27 +10,54 @@
 			var c = document.getElementById("myCanvas");
 			var ctx = c.getContext("2d");
 			
-			//Triangle
+			// //Triangle
+			// ctx.beginPath();
+			// ctx.strokeStyle = "blue";
+			// ctx.moveTo(75, 0);
+			// ctx.lineTo(0, 100);
+			// ctx.lineTo(150, 100);
+			// ctx.closePath();
+			// ctx.stroke();
+			// ctx.fillStyle = "red";
+			// ctx.fill();
+
+			// //Circle
+			// ctx.beginPath();
+			// ctx.arc(200, 200, 100, 0, 6.28);
+			// ctx.stroke();
+			// ctx.fillStyle = "black";
+			// ctx.fill();
+
+			// //Rectangle
+			// ctx.fillStyle = "green";
+			// ctx.fillRect(400, 400, 100, 100) //x , y, L, W
+
+			//rectangle grass
+			ctx.fillStyle = "green";
+			ctx.fillRect(0, 250, 800, 250);
+
+			//rectangle building #1
+			ctx.fillStyle = "grey";
+			ctx.fillRect(200, 50, 100, 200);
+
+			//triangle pyramid
 			ctx.beginPath();
-			ctx.strokeStyle = "blue";
-			ctx.moveTo(75, 0);
-			ctx.lineTo(0, 100);
-			ctx.lineTo(150, 100);
+			ctx.strokeStyle = "yellow";
+			ctx.moveTo(350, 60);
+			ctx.lineTo(300, 250);
+			ctx.lineTo(400, 250);
 			ctx.closePath();
 			ctx.stroke();
-			ctx.fillStyle = "red";
+			ctx.fillStyle = "yellow";
 			ctx.fill();
 
 			//Circle
 			ctx.beginPath();
-			ctx.arc(200, 200, 100, 0, 6.28);
+			ctx.arc(0, 0, 100, 0, 6.28);
 			ctx.stroke();
-			ctx.fillStyle = "black";
+			ctx.fillStyle = "red";
 			ctx.fill();
 
-			//Rectangle
-			ctx.fillStyle = "green";
-			ctx.fillRect(400, 400, 100, 100) //x , y, L, W
 		}
 	</script>
 </head>
